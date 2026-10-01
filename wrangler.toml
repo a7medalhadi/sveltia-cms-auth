@@ -1,3 +1,10 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Kept here so dashboard and repo stay in sync: a redeploy would otherwise wipe
+# plain-text variables set in the dashboard. GITHUB_CLIENT_SECRET stays a
+# dashboard *secret* (secrets are never overwritten by deploys).
+[vars]
+GITHUB_CLIENT_ID = "Ov23liVHuhwPMxPzBYm4"
+ALLOWED_DOMAINS = "*.ahmedalhadi7-aa.workers.dev"
